@@ -4,7 +4,11 @@
   <thead>
     <tr>
       <th>画像</th>
+<<<<<<< HEAD
       <th><%= sort_link(@search, :user_name, "作成者") %></th>
+=======
+      <th><%= sort_link(@search, :name, "作成者") %></th>
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
       <th><%= sort_link(@search, :oshi_name, "推し") %></th>
       <th><%= sort_link(@search, :updated_at, "更新日") %></th>
     </tr>
@@ -25,7 +29,11 @@
           </td>
           <% end %>
         <% end %>
+<<<<<<< HEAD
         <td><%= profile.user_name %></td>
+=======
+        <td><%= link_to profile.name,profile %></td>
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
         <td><%= profile.oshi_name %></td>
         <td><%= profile.updated_at.strftime("%Y-%m-%d %H:%M") %></td>
       </tr>

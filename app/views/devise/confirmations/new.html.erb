@@ -8,7 +8,11 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
   </div>
 
+<<<<<<< HEAD
   <div class="index_menu">
+=======
+  <div class="actions">
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
     <%= f.submit "Resend confirmation instructions" %>
   </div>
 <% end %>

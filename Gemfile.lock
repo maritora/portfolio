@@ -278,7 +278,10 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   devise
+<<<<<<< HEAD
   factory_bot_rails
+=======
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
   high_voltage
   image_processing (~> 1.2)
   importmap-rails (~> 1.1)
@@ -286,7 +289,10 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.3)
   mini_magick
+<<<<<<< HEAD
   mysql2
+=======
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
   pry-rails
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)

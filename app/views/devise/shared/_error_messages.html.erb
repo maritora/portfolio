@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <% if @user.errors.any? %>
   <div class="alert alert-danger">
     <ul class="mb-0">
       <% @user.errors.full_messages.each do |msg| %>
+=======
+<% if object.errors.any? %>
+  <div class="alert alert-danger">
+    <ul class="mb-0">
+      <% object.errors.full_messages.each do |msg| %>
+>>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
         <li><%= msg %></li>
       <% end %>
     </ul>
