@@ -6,12 +6,10 @@ class ApplicationController < ActionController::Base
       devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
       devise_parameter_sanitizer.permit(:account_update, keys: [:name])
     end
-<<<<<<< HEAD
-=======
+
     def after_sign_in_path_for(resource)
       profiles_path
     end
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
 
     def index
       @user = User.find(params[:id])
@@ -21,5 +19,4 @@ class ApplicationController < ActionController::Base
       @search = @profiles.ransack(params[:q])
       @search_profiles = @search.result(distinct: true).order(created_at: "DESC").includes(:user)
     end
-
 end

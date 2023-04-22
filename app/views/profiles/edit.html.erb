@@ -1,5 +1,4 @@
 <div class="main_object">
-<<<<<<< HEAD
   <% if flash[:notice] %>
     <p class="notice"><%= flash[:notice] %></p>
   <% end %>
@@ -11,7 +10,6 @@
       <div class="item">
         <label class="label"><%= f.label :sns ,"SNS" %></label>
         <%= f.text_field :sns %>
-=======
 <br>
   <p class="lead-form">プロフィール編集</p>
     <%= form_with(model: @profile,local: true) do |f| %>
@@ -20,7 +18,6 @@
       <div class="item">
         <label class="label"><%= f.label :name ,"名前" %></label>
         <%= f.text_field :name %>
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
       </div>
       <div class="item">
         <label class="label"><%= f.label :image ,"写真" %></label>
@@ -35,7 +32,6 @@
         <%= f.text_field :call %>
       </div>
       <div class="item">
-<<<<<<< HEAD
         <label class="label"><%= f.label :job ,"推しは何をしてる人？" %></label>
         <%= f.text_field :job %>
       </div>
@@ -44,8 +40,6 @@
         <%= f.text_field :favorite_point %>
       </div>
       <div class="item">
-=======
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
         <label class="label"><%= f.label :reason ,"推しになったきっかけ・思い出" %></label>
         <%= f.text_field :reason %>
       </div>
@@ -58,8 +52,7 @@
         <%= f.text_field :future %>
       </div>
       <div class="item">
-<<<<<<< HEAD
-=======
+
         <label class="label"><%= f.label :job ,"推しは何をしてる人？" %></label>
         <%= f.text_field :job %>
       </div>
@@ -68,16 +61,12 @@
         <%= f.text_field :favorite_point %>
       </div>
       <div class="item">
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
         <label class="label"><%= f.label :free ,"推しへの熱い想いをどうぞ！" %></label>
         <%= f.text_area :free, class: "inputs" %>
       </div>
       <%= f.hidden_field :id, value: @profile.id %>
       <%= f.hidden_field :user_id, value: current_user.id %>
-<<<<<<< HEAD
       <%= f.hidden_field :user_name, value: current_user.name %>
-=======
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
       <div class="item">
         <p class="label">カラー選択</p>
         <div class="inputs">
@@ -96,11 +85,8 @@
         </div>
       </div>
       <div class="btn-area">
-<<<<<<< HEAD
          <%= f.submit "変更を保存する!", class: "red-btn" %>
-=======
          <%= f.submit "プロフィール作成する！", class: "red-btn" %>
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
         <%= link_to '一覧に戻る', :profiles, class: "back" %>
       </div>
     <% end %>

@@ -1,12 +1,7 @@
 <div class="main_object">
-<<<<<<< HEAD
-
 <h2>ログイン</h2>
-  <% if flash[:notice] %>
-    <p class="notice"><%= flash[:notice] %></p>
-  <% end %>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
   <div class="field">
     <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "メールアドレス" %>
@@ -17,21 +12,6 @@
     <%= f.text_field :password, autocomplete: "current-password" %>
   </div>
   <br>
-=======
-<h2>ログイン</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
@@ -40,11 +20,7 @@
   <% end %>
   <br />
   <div class="actions">
-<<<<<<< HEAD
     <%= f.submit "ログイン", class:"index_menu" %>
-=======
-    <%= f.submit "ログイン" %>
->>>>>>> 9d844ddeef8b005f531d231581ea62e33f3f3a69
   </div>
 <% end %>
 </div>

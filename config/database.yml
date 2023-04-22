@@ -4,17 +4,30 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-development:
+default: &default
   adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: mysql_development
-  pool: 5
-  username: root
-  password:
-  host: localhost
+  encoding: utf8mb4
+
+development:
+  <<: *default
+  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: db/test.sqlite3
+
+production:
+  database: portfolio_production
+  adapter: mysql2
+  encoding: utf8mb4
+  charset: utf8mb4
+  collation: utf8mb4_general_ci
+  username: <%= Rails.application.credentials.db[:user_name] %>
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:endpoint] %>
+  pool: 20
+  timeout: 1000
 
