@@ -20,7 +20,7 @@ test:
   database: test
 
 production:
-  database: portpholio_production
+  database: portfolio_production
   adapter: mysql2
   encoding: utf8mb4
   charset: utf8mb4
