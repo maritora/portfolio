@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: portpholio_development
+  database: portfolio_development
   pool: 5
   username: root
   password:
