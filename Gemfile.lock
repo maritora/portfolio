@@ -274,12 +274,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
   devise
   factory_bot_rails
-
   high_voltage
   image_processing (~> 1.2)
   importmap-rails (~> 1.1)
